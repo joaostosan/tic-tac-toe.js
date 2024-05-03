@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Silkscreen&display=swap"
+        rel="stylesheet">
+    <script src="js/index.js" defer></script>
+    <title>Tic-Tac-Toe III</title>
+</head>
+
+<body>
+    <main id="main">
+        <header class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </header>
+
+        <section class="players">
+            <div class="players__input">
+                <label for="playerX">X </label>
+                <input type="text" name="playerX" id="playerX" required>
+                <input type="text" name="playerO" id="playerO" required>
+                <label for="playerO"> O</label>
+            </div>
+            <div>
+                <button type="button" id="startGame">Start Game</button>
+            </div>
+            <div class="current__player">
+                <label for="currentPlayer" class="current__player__label">Current Player</label>
+                <input type="text" name="currentPlayer" id="currentPlayer" disabled>
+            </div>
+        </section>
+
+        <section class="board" id="board">
+            <div class="board__field" data-row="0" data-column="0"></div>
+            <div class="board__field" data-row="0" data-column="1"></div>
+            <div class="board__field" data-row="0" data-column="2"></div>
+            <div class="board__field" data-row="1" data-column="0"></div>
+            <div class="board__field" data-row="1" data-column="1"></div>
+            <div class="board__field" data-row="1" data-column="2"></div>
+            <div class="board__field" data-row="2" data-column="0"></div>
+            <div class="board__field" data-row="2" data-column="1"></div>
+            <div class="board__field" data-row="2" data-column="2"></div>
+        </section>
+        <section>
+            <button type="button" class="button" id="resetGame">Reset Game</button>
+        </section>
+    </main>
+
+    <footer>
+        Developed by Joao Vitor dos Santos &copy; 2024
+    </footer>
+</body>
+
+</html>
